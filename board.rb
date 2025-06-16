@@ -19,7 +19,6 @@ class Board
   end
 
   def valid_move?(position)
-    puts "Choose a number between 1 and 9"
     index = position.to_i - 1
     index.between?(0, 8) && @grid[index] == " "
   end
